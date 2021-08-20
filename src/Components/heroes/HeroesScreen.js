@@ -22,8 +22,10 @@ export const HeroesScreen = ({history}) => {
 const btnReturn = () => {
     if(history.length <=2){
         history.push('/');
+    } else {
+        
+        history.goBack();
     }
-    history.goBack();
 }
     return (
         <div>
