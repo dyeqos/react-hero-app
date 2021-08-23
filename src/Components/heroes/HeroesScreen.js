@@ -20,14 +20,15 @@ export const HeroesScreen = ({history}) => {
         characters,
     } = hero;
 
-const btnReturn = () => {
-    if(history.length <=2){
-        history.push('/');
-    } else {
-        
-        history.goBack();
+    const btnReturn = () => {
+        if(history.length <=2){
+            history.push('/');
+        } else {
+            
+            history.goBack();
+        }
     }
-}
+
     return (
         <div>
             <div className="row mt-5 bg-dark">
